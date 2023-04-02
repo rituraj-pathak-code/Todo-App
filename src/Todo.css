@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Montserrat&family=Poppins:wght@400;600&display=swap');
+
+.todo{
+    width: 70%;
+    height: 90vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
+.todo__header{
+    margin-block: 1rem 3rem;
+     font-family: 'Montserrat', sans-serif;;
+    text-align: center;
+}
+.input__field{
+    padding: 5px;
+    width: 400px;
+    height: 40px;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    
+
+}
+.add__task{
+    height: 40px;
+    margin-left: 10px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    ;
+}
+.todo__form{
+    margin-block: 3rem;
+    text-align: center;
+}
+.todo__items{
+    margin: 60px ;
+}
+.todo__item{
+    position: relative;
+    background-color: #47624F;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+.item_btns{
+    display: flex;
+    gap: 1rem;
+    position: fixed;
+    right: 100px;
+    align-self: center;
+}
+button{
+        height: 40px;
+        margin-left: 10px;
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 1.2rem;
+        font-family: 'Lato', sans-serif;
+        cursor: pointer;
+}
+.btns_symbol{
+    font-size: 2rem;
+
+}
+.todo__item p {
+    font-family: 'Poppins', sans-serif;
+    align-self: center;
+    font-size: 1.22rem;
+    padding-left: 1rem;
+    color: white;
+}
+.complete__items{
+    margin: 60px;
+}
