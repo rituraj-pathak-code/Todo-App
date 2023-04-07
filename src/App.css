@@ -1,8 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@400;700&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body{
-  background-color: #314437;
+  background-color:#191c1f;
+  color: white;
+  
+}
+.main_header{
+  text-align: center;
+  margin-top: 2.5rem;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2.5rem;
+}
+.todo_wrapper{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2.5rem;
+  background-color: #2d2f33;
+  width: 800px;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  
+}
+.todo_input{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  
+}
+.todo_input_item{
+  display: flex;
+  flex-direction: column;
+  margin-block: 1rem 3rem;
+  gap: 10px;
+
+}
+.todo_input_item input{
+  width: 300px;
+  height: 30px;
+  padding-left: 10px;
+  font-size: 1.2rem;
+  color: rgb(109, 109, 109)
+}
+.todo_input_item input::placeholder{
+  color: rgb(209, 208, 208)
+}
+.todo_input_item input:focus{
+  outline: none;
+}
+.primarybtn{
+  background: transparent;
+ 
+  border: none;
+  margin-top: 30px;
+  font-size: 2.2rem;
+  color: #c71c4f;
+  cursor: pointer;
+}
+
+.btn_area{
+  margin-left: 50px;
+}
+.secondarybtn{
+  background-color: rgb(136, 149, 150);
+  height: 40px;
+  width: fit-content;
+  border: none;
+  font-size: 1.2rem;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+.active{
+  background-color: #c71c4f;
+
+}
+.todo_list{
+  margin-top: 2rem
+}
+.upper_border{
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-left: 8px solid #c71c4f;
+  border-top: 8px solid #c71c4f;
+}
+.lower_border {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-right: 8px solid #c71c4f;
+  border-bottom: 8px solid #c71c4f;
+}
+.model{
+  width: 200px;
+  height: 200px;
+  background-color: white;
+ 
 }

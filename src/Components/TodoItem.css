@@ -1,0 +1,42 @@
+.todo_list_item {
+    background-color: #3b4144;
+    margin-block: 1rem;
+    padding: 1rem 1.5rem 2rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo_list_item h1 {
+    color: #e75a84;
+    margin-block: 10px;
+
+}
+
+.todo_list_item p {
+    color: rgb(182, 191, 192);
+}
+
+.task_controls button {
+    margin-inline: 10px;
+    font-size: 2rem;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.checkbtn i {
+    color: #e75a84;
+}
+.checkbtn i:hover{
+    color: #cc3e69;
+
+}
+.trash_btn:hover{
+    color: rgb(190, 22, 50);
+}
+.todo_list_item_info{
+ display: flex;
+ flex-direction: column;
+}
