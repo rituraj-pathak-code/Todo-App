@@ -1,0 +1,62 @@
+.modal_container{
+    position: absolute;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+
+}
+.modal_window{
+    width: 480px;
+    height: 330px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.548);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+
+    border-radius: 10px;
+    z-index: 10000;
+    animation: fadein 0.3s ease-out;
+}
+.animate-in{
+    animation: fadein 0.3s ease-out;
+}
+
+.modal_window i{
+    font-size: 7rem;
+    color: rgba(170, 49, 49, 0.781);
+}
+.modal_window button{
+    background-color: #c71c4f;
+    height: 40px;
+    width: 100px;
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@keyframes fadein {
+    0%{
+        transform: scale(0);
+    }
+    25%{
+        transform: scale(40%);
+    }
+    50%{
+        transform: scale(80%);
+    }
+    75%{
+        transform: scale(120%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+
+
+}

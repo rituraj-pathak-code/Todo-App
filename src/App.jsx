@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import TodoItem from "./Components/TodoItem";
 import "./App.css";
 import CompleteTodoItem from "./Components/CompleteTodoItem";
+import ModalWindow from "./Components/ModalWindow";
 
 function App() {
   const [tasks, settask] = useState([]);
@@ -21,6 +22,7 @@ function App() {
 
   const addTaskHandler = () => {
     if (taskTitle.trim().length === 0 || taskDesc.trim().length === 0) {
+      setModelOpen(true);
       return;
     }
     let taskInfo = {
@@ -48,8 +50,12 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className={`App}`}>
       <h1 className="main_header">Todo App</h1>
+
+      {isModelOpen && (
+        <ModalWindow setModelOpen={setModelOpen} isModelOpen={isModelOpen} />
+      )}
       <div className="todo_wrapper">
         <div className="upper_border"></div>
         <div className="todo_input">
@@ -95,6 +101,7 @@ function App() {
             Completed
           </button>
         </div>
+
         <div className="todo_list">
           {isCompleteScreen
             ? completeTasks.map((item, index) => {
@@ -126,6 +133,7 @@ function App() {
         </div>
         <div className="lower_border"></div>
       </div>
+      <div className={`${isModelOpen ? "overlay" : ""}`}></div>
     </div>
   );
 }
