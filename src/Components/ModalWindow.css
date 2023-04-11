@@ -60,3 +60,9 @@
 
 
 }
+
+@media screen and (max-width: 610px){
+    .modal_window{
+        width: 300px;
+    }
+}

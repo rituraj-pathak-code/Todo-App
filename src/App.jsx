@@ -83,7 +83,7 @@ function App() {
               className="primarybtn"
               onClick={addTaskHandler}
             >
-              <i className="fa fa-solid fa-plus"></i>
+              Add Task
             </button>
           </div>
         </div>

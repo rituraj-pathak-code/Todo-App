@@ -5,7 +5,7 @@ const ModalWindow = (props) => {
   return (
     <div className="modal_container">
       <div className={`modal_window`}>
-        <i class="fa fa-solid fa-ban"></i>
+        <i className="fa fa-solid fa-ban"></i>
         <h1>Oops</h1>
         <p>Please add a new task</p>
         <button onClick={() => props.setModelOpen(false)}>OK</button>

@@ -17,6 +17,10 @@
     color: rgb(182, 191, 192);
 }
 
+.task_controls{
+    display: flex;
+    flex-wrap: nowrap;
+}
 .task_controls button {
     margin-inline: 10px;
     font-size: 2rem;
@@ -39,4 +43,16 @@
 .todo_list_item_info{
  display: flex;
  flex-direction: column;
+ width: 70%;
+}
+@media screen and (max-width:860px){
+    .todo_list_item h1{
+        font-size: 15px ;
+        word-wrap: wrap;
+    }
+    .todo_list_item p{
+        font-size: 10px;
+        word-wrap: wrap;
+    }
+
 }
